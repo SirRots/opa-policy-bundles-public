@@ -33,7 +33,6 @@ get_owner(id)==jwt.claims.sub
 }
 
 allow_winse if {
-get_owner(id)== 
   input.method == "DELETE"
   print("Allowed because of DELETE")
 }
