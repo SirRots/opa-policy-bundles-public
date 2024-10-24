@@ -28,12 +28,12 @@ allow_opberg if {
 
 allow_opberg if {
   input.method == "PUT"
-  get_owner(input.path[1]) == jwt.sub
+  get_owner(input.path[1]) == jwt.claims.sub
   print("Allowed because of owner and PUT")
 }
 
 allow_opberg if {
   input.method == "DELETE"
-  get_owner(input.path[1]) == jwt.sub
+  get_owner(input.path[1]) == jwt.claims.sub
   print("Allowed because of owner and DELETE")
 }
