@@ -27,7 +27,7 @@ allow_winse if {
 }
 
 allow_winse if {
-get_owner(id)== 
+get_owner(id)==jwt.claims.sub 
   input.method == "PUT"
   print("Allowed because of PUT")
 }
