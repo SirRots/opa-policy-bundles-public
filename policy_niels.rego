@@ -23,7 +23,6 @@ allow_NIELS if {
 
 allow_NIELS if {
   input.method == "PUT" 
-  ###input.body_args.name == "Lucifer"
   print("Allowed because of Lucifer")
 }
 
