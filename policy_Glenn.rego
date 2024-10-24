@@ -17,7 +17,7 @@ allow if {
 ######################################################
 
 allow_Glenn if {
-  get_owner(id) == null
+  get_owner(input.path[1]) == null
   input.method == "POST"
   print("Allowed because of POST")
 }
