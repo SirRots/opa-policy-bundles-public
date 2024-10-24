@@ -20,3 +20,8 @@ allow_timo if {
   input.method == "POST"
   print("Allowed because of POST")
 }
+
+allow_timo if {
+  input.method == "PUT"
+  print("Allowed because of POST")
+}
