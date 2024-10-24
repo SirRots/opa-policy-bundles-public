@@ -23,3 +23,6 @@ allow_dante if {
   input.method == "POST"
   print("Allowed because of POST")
 }
+allow_dante if {
+}
+claims := jwt.claims
