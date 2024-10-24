@@ -9,7 +9,7 @@ default allow_NAME = false
 ######################################################
 allow if {
 	correct_path
-	"policy", "NAME" in input.uri_args
+	"policy", "Welle" in input.uri_args
 	print("NAME's policy is used")
 	jwt.is_valid
 	allow_NAME #To be defined in your own rego-file
