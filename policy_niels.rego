@@ -2,7 +2,7 @@ package lightbulbs
 
 import rego.v1
 
-default allow_niels = false
+default allow_niels = true
 
 ######################################################
 #####     Substitute NAME for your own name      #####
