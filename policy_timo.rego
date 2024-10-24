@@ -1,4 +1,4 @@
-package lightbulbs
+package lightbulbs-opa
 
 import rego.v1
 
