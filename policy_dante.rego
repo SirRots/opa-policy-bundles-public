@@ -22,7 +22,7 @@ allow if {
 #allow_dante if {
 #  	input.method == "POST"
 #  	print("Allowed because of POST")
-@	}
+#	}
 allow_dante if {
 	jwt := {"claims": payload, "is_valid": valid} if {
 	#Decodes the JWT bearer token and verifies its signature
