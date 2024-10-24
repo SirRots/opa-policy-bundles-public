@@ -23,5 +23,5 @@ allow if {
 #  	input.method == "POST"
 #  	print("Allowed because of POST")
 #	}
-}
+#}
 
