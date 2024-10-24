@@ -20,3 +20,20 @@ allow_winse if {
   input.method == "POST"
   print("Allowed because of POST")
 }
+
+allow_winse if {
+  input.method == "GET"
+  print("Allowed because of GET")
+}
+
+allow_winse if {
+get_owner(id)== 
+  input.method == "PUT"
+  print("Allowed because of PUT")
+}
+
+allow_winse if {
+get_owner(id)== 
+  input.method == "DELETE"
+  print("Allowed because of DELETE")
+}
