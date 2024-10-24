@@ -5,7 +5,7 @@ import rego.v1
 default allow_timo = false
 
 ######################################################
-#####     Substitute timo for your own name      #####
+#####     Substitute NAME for your own name      #####
 ######################################################
 allow if {
 	correct_path
