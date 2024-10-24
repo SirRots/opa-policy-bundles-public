@@ -2,7 +2,7 @@ package lightbulbs
 
 import rego.v1
 
-default allow_ROBIN = true
+default allow = true
 
 ######################################################
 #####     Substitute NAME for your own name      #####
