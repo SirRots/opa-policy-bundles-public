@@ -2,21 +2,21 @@ package lightbulbs
 
 import rego.v1
 
-default allow_NAME = false
+default allow_timo = false
 
 ######################################################
-#####     Substitute NAME for your own name      #####
+#####     Substitute timo for your own name      #####
 ######################################################
 allow if {
 	correct_path
-	"policy", "NAME" in input.uri_args
-	print("NAME's policy is used")
+	"policy", "timo" in input.uri_args
+	print("timo's policy is used")
 	jwt.is_valid
-	allow_NAME #To be defined in your own rego-file
+	allow_timo #To be defined in your own rego-file
 }
 ######################################################
 
-allow_NAME if {
+allow_timo if {
   input.method == "POST"
   print("Allowed because of POST")
 }
